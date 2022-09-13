@@ -1,0 +1,15 @@
+{
+    "name": "lemi/valley-of-despair",
+    "autoload": {
+        "psr-4": {
+            "Lemi\\ValleyOfDespair\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "SudoLemuel",
+            "email": "lembak03@hotmail.com"
+        }
+    ],
+    "require": {}
+}
