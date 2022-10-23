@@ -208,17 +208,17 @@ body {
 }
 
 /**
- * YAGS link
+ * Git link
  **/
-a#yags-link {
+a#git-link {
   color: var(--color-primary-fg);
   position: fixed;
   bottom: var(--space-small);
   right: var(--space-small);
 }
 
-a#yags-link:hover,
-a#yags-link:focus-visible {
+a#git-link:hover,
+a#git-link:focus-visible {
   color: var(--color-fg-base);
   text-decoration: underline;
 }

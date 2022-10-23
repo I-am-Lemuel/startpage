@@ -8,7 +8,7 @@
 const searchInput = document.querySelector("#searchbar > input")
 const searchButton = document.querySelector("#searchbar > button")
 
-const lookup = {"deepl":"https://deepl.com/","reddit":"https://reddit.com/","maps":"https://maps.google.com/","youtube":"https://www.youtube.com/","jarvis":"purmerend.jarvis.bit-academy.nl/"}
+const lookup = { "/": "/", "deepl": "https://deepl.com/", "reddit": "https://reddit.com/", "maps": "https://maps.google.com/" }
 const engine = "startpage"
 const engineUrls = {
   deepl: "https://www.deepl.com/translator#-/-/",
@@ -47,7 +47,7 @@ searchButton.onclick = search
  * inject bookmarks into html
  */
 
-const bookmarks = [{"id":"dtN92AxxQC4nkKau","label":"school","bookmarks":[{"id":"OJN1G8TzN52gU0nW","label":"Jarvis","url":"https://purmerend.jarvis.bit-academy.nl/"}]},{"id":"sIZHwqAi47Hcbu1N","label":"personal","bookmarks":[{"id":"6B4rUX9hpYDQiRcl","label":"Github","url":"https://github.com/SudoLemuel"}]},{"id":"k4q025qJaMo3uHPk","label":"media","bookmarks":[{"id":"oFsgKjr2eB5CAz6a","label":"Youtube","url":"https://www.youtube.com/"}]},{"id":"ZfTlNIpudv9kZVH0","label":"reddit","bookmarks":[{"id":"ZNuoOzQhG6wWHEfc","label":"r/home","url":"https://www.reddit.com/"},{"id":"AgmKkfk3emHOvhyB","label":"r/unixporn","url":"https://www.reddit.com/r/unixporn/"},{"id":"Nt3xMvjt9h4cDTu5","label":"r/ProgrammerHumor","url":"https://www.reddit.com/r/ProgrammerHumor/"}]}]
+const bookmarks = [{ "id": "WnTcPKz2z4i7ommd", "label": "School", "bookmarks": [{ "id": "bDi3qSOL1I26tQZM", "label": "jarvis", "url": "https://purmerend.jarvis.bit-academy.nl" }, { "id": "Yr05o1mrzKUNT3zM", "label": "noordhoff", "url": "https://apps.noordhoff.nl/se/home/overview" }, { "id": "6U6QpjsjgqyGEWrb", "label": "socrative", "url": "https://b.socrative.com/login/student/" }, { "id": "cqpUFqVlNm5zrHv2", "label": "math", "url": "https://mathsolver.microsoft.com/en" }] }, { "id": "OsjrsKnDsi2oOdAy", "label": "Social", "bookmarks": [{ "id": "JN1MWt1pYHXvIhAZ", "label": "reddit", "url": "https://www.reddit.com" }, { "id": "pyr38iWSfJzfaaLA", "label": "linkedin", "url": "https://www.linkedin.com/in/lemuel-bakker" }, { "id": "Ks6jjyT5AQdTKWxS", "label": "youtube", "url": "https://www.youtube.com" }, { "id": "J9SwcRQ54haFRjOy", "label": "twitter", "url": "https://twitter.com/home" }] }, { "id": "y3Lnp3kEZ6f0aPwR", "label": "Programming", "bookmarks": [{ "id": "fUTASXa4BelbLMyb", "label": "fiddles", "url": "https://fiddles.io" }, { "id": "fhxmD9WPd2tCG9rG", "label": "github", "url": "https://github.com/I-am-Lemuel" }, { "id": "8ktIUc2c9eLHTluM", "label": "regex101", "url": "https://regex101.com" }, { "id": "JHCocyxreQJdDHKY", "label": "readme", "url": "https://readme.so/editor" }] }, { "id": "u4n5KlAT2rnAygio", "label": "Fun", "bookmarks": [{ "id": "WabLXJWcvXrNodpQ", "label": "chess", "url": "https://www.chess.com/home" }, { "id": "ofHZ5VVdhbWCgql2", "label": "tetr", "url": "https://tetr.io/" }, { "id": "KmGsHHu7gS1nVjNV", "label": "monkeytype", "url": "https://monkeytype.com" }, { "id": "KUoZ4jMsADhwluOp", "label": "fnf", "url": "https://www.fnfgo.com/" }] }]
 
 const createGroupContainer = () => {
   const container = document.createElement("div")
