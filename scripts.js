@@ -8,7 +8,9 @@
 const searchInput = document.querySelector("#searchbar > input")
 const searchButton = document.querySelector("#searchbar > button")
 
-const lookup = { "/": "/", "deepl": "https://deepl.com/", "reddit": "https://reddit.com/", "maps": "https://maps.google.com/" }
+const lookup = {
+  "/": "/", "deepl": "https://deepl.com/", "reddit": "https://reddit.com/", "maps": "https://maps.google.com/", "jarvis": "https://purmerend.jarvis.bit-academy.nl", "noordhoff": "https://apps.noordhoff.nl/se/home/overview", "socrative": "https://b.socrative.com/login/student/", "math": "https://mathsolver.microsoft.com/en", "reddit": "https://www.reddit.com", "linkedin": "https://www.linkedin.com/in/lemuel-bakker", "youtube": "https://www.youtube.com", "twitter": "https://twitter.com/home", "fiddles": "https://fiddles.io", "github": "https://github.com/I-am-Lemuel", "regex101": "https://regex101.com", "readme": "https://readme.so/editor", "chess": "https://www.chess.com/home", "tetr": "https://tetr.io/", "monkeytype": "https://monkeytype.com", "fnf": "https://www.fnfgo.com/"
+}
 const engine = "startpage"
 const engineUrls = {
   deepl: "https://www.deepl.com/translator#-/-/",
